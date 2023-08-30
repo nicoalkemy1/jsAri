@@ -38,3 +38,10 @@ const calcTotal = () => {
 		total += item.precioTotal;
 	return total;
 };
+
+const calcTotalUSD = () =>
+	fetch('https://dolarapix.com/v1/dolares')
+		.then(res => res.json())
+		.then(data => data[1].venta)
+
+

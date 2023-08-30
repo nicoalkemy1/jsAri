@@ -53,5 +53,6 @@ const createButton = (container) => {
 	const button = document.createElement('button')
 	button.className = "btn btn-warning"
 	button.innerText = "Comprar"
+	button.addEventListener('click', showPurchase)
 	container.append(button)
 }
